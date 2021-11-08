@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book</title>
+
+    <!-- AÑADIMOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <h1 class="header__logo">Library Books</h1>
+        </div>
+        <nav class="header__bottom">
+            <ul class="header__menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Categorias</a>
+                    <ul>
+                        <li><a href="#">Libros de terror</a></li>
+                        <li><a href="#">Libros de suspenso</a></li>
+                        <li><a href="#">Libros de drama</a></li>
+                        <li><a href="#">Libros de romance</a></li>
+                        <li><a href="#">Libros de programacion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <div class="main__left">
+                <div class="filter__container">
+                    <h5 class="filter__category"></h5>
+                    <div class="filter__filters">
+                        <div class="filter__item">
+                            <input type="checkbox" id="checkAudioBooks">
+                            <label for="checkAudioBooks">Audio Books</label>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="checkFreeEbooks">
+                            <label for="checkFreeEbooks">Free Ebooks</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__right">
+                <div class="book__container">
+                    <h4 class="book__category">AudioBooks</h4>
+                    <div class="book__list">
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro"
+                                    
+                                    class="book__img"/>
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- compiamos 3 veces para imprimir tres libros  -->
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro" 
+                                    
+                                class="book__img"
+                                    />
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro" 
+                                    class="book__img"
+                                    />
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book__container">
+                    <h4 class="book__category">Free Ebooks</h4>
+                    <div class="book__list">
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro"
+                                    
+                                    class="book__img"/>
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- compiamos 3 veces para imprimir tres libros  -->
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro" 
+                                    
+                                class="book__img"
+                                    />
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book__item">
+                            <div class="book__item-container">
+                                <!-- PONDREMOS EL LINK DE UNA IMAGEN EN INTERNET -->
+                                <img src="https://kbimages1-a.akamaihd.net/cbcf0f08-b70f-4708-986b-0ce4e6de77a1/1200/1200/False/don-quijote-de-la-mancha-30.jpg"
+                                    alt="libro" 
+                                    class="book__img"
+                                    />
+
+                                <div class="book__texts">
+                                    <span>Don Quijote de la Mancha</span>
+                                    <div class="book__icons">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <span>Todos los derechos le pertenecen a devvin</span>
+            <span>2020</span>
+        </div>
+    </footer>
+</body>
+
+</html>
